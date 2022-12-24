@@ -1,0 +1,39 @@
+.features {
+    padding-bottom: 0;
+}
+
+.features-list {
+    display: flex;
+}
+
+.features-item {
+    width: 270px;
+}
+
+.features-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background-color: $additional-bcg-color;
+
+
+}
+
+.features-title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.features-text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $add-text-color;
+}

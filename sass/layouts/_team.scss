@@ -1,0 +1,43 @@
+.team {
+    background-color: $additional-bcg-color;
+}
+
+
+
+.team-list {
+    display: flex;
+}
+
+
+.teammate-item {
+    margin-right: 30px;
+    border-radius: 0 0 4px 4px;
+
+    background-color: $white-color;
+    box-shadow: $photo-shadow-color;
+    
+}
+
+.teammate-item:last-child {
+    margin-right: 0;
+}
+
+.teammate-name {
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+.teammate-name,
+.teammate-pos  {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+
+.teammate-pos {
+    margin-bottom: 16px;
+
+    font-weight: 400;
+    color: $add-text-color;
+}

@@ -1,0 +1,231 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $backdrop-color;
+
+    transition: opacity $transition-time $transition-cubic,
+                visibility $transition-time $transition-cubic;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-100%, -50%)  rotate(180deg)  ;
+}
+
+.form-title {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg) ;
+
+    padding: 40px;
+    width: 528px;
+    height: 581px;
+
+    border-radius: 4px;
+    background-color: $white-color;
+
+    transition: transform $transition-time $transition-cubic;
+}
+
+.button-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    border: 1px solid $btn-close-border;
+    background-color: $transparent-background;
+}
+
+.icon-close {
+    fill: currentColor;
+}
+
+.button-close:hover .icon-close, 
+.button-close:focus .icon-close {
+    fill: $accent;  
+}
+
+.modal-form-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* outline: 1px solid red ; */
+}
+
+.modal-form-field:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.modal-form-field:nth-child(5) {
+    margin-bottom: 20px;
+}
+
+.modal-form-field:nth-child(6) {
+    margin-bottom: 30px;
+}
+
+.modal-form-field label {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.01em;
+    color: $add-text-color;
+}
+
+.modal-form-field label:last-child {
+    margin-bottom: 0;
+}
+
+.modal-form-field input,
+.modal-form-field textarea{     
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.01em;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+}
+
+.modal-form-field input {
+    padding-left: 42px;
+}
+
+ .form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    pointer-events: none;  
+}
+
+.form-input {
+    padding: 12px 12px;
+    line-height: 1.167;
+    transition: border-color var(--transition-time) var(--transition-cubic);
+}               
+
+.form-input + .form-icon {
+    transition: fill var(--transition-time) var(--transition-cubic);
+}
+
+.form-input::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $placeholder-color;
+}
+
+
+.form-input:hover,
+.form-input:focus{
+    border-color: $accent;
+    outline: none;
+}
+
+.form-input:hover + .form-icon,
+.form-input:focus + .form-icon {
+    fill: $accent;
+}
+
+
+
+.modal-form-field textarea {
+    padding: 12px 16px;
+    height: 120px;
+}
+
+.modal-form-field.checkbox-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-form-field .policy-checkbox {
+    appearance: none;
+    position: absolute;
+    border: 0;
+    padding: 0;
+}
+
+.checkbox-icon {
+    position: relative;
+    border: 2px solid $check-box-color;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+    border-radius: 2px;
+    align-items: center;
+}
+
+.checkbox-icon svg {
+    opacity: 0;
+    transition: opacity $transition-time $transition-cubic;
+}
+
+.policy-checkbox:checked + .policy-label > span svg {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+
+    opacity: 1;
+    border-radius: 2px;
+    background-color: $accent;
+}
+
+
+
+
+.modal-form-field .policy-label {
+    display: flex;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $add-text-color;
+}
+
+
+.policy-link {
+    margin-left: 5px;
+    color: $accent;
+}
+
+.hero-btn[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 52px;
+}
+
+.hero-btn[type="submit"]:hover {
+    box-shadow: $hero-sahdow-btn;
+}

@@ -1,0 +1,93 @@
+.page-header {
+    border-bottom: 1px solid;
+    border-color: $header-border-color;
+}
+.nav-list {
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav-list .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+
+.contact-list {
+    display: flex;
+
+}
+
+.contact-list .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+
+.nav-link,
+.contact-item  {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: $basic-logo-color;
+
+    transition: color var(--transition-time) var(--transition-cubic);
+}
+
+.logo-color,
+.current,
+.nav-link:hover,
+.nav-link:focus,
+.contact-item:hover,
+.contact-item:focus {
+    color: $accent;
+    
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link.current::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent;
+}
+
+.page-nav,
+.page-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-item {
+    color: $add-text-color;
+}
+
+.icon-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+
+    fill: currentColor;
+}
+
+.icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+
+    fill: currentColor;
+
+}
