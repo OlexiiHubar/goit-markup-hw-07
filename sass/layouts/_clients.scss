@@ -4,10 +4,10 @@
 
 .clients-item {
     margin-right: 30px;
-}
 
-.clients-item:last-child{
-    margin-right: 0;
+    &:last-child{
+        margin-right: 0;
+    }
 }
 
 .clients-link {
@@ -23,17 +23,12 @@
 
     transition: color $transition-time $transition-cubic,
                 border-color $transition-time $transition-cubic;
-
+    &:hover,
+    &:focus {
+        color: $accent;
+        border-color: $accent;
+                }
 }
-
-.clients-link:hover,
-.clients-link:focus {
-    color: $accent;
-    border-color: $accent;
-}
-    
-
-
 
 .clients-icon {
     fill: currentColor;

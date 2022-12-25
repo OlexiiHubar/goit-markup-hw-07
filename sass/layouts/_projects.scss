@@ -14,6 +14,16 @@
 
     transition: box-shadow $transition-time $transition-cubic;
     
+    &:hover,
+    &:focus {
+        box-shadow: $project-shadow-color;
+    }
+
+    &:hover .project-cover-text,
+    &:focus .project-cover-text {
+        transform: translateY(0%);
+
+    } 
 }
 
 .project-thumb {
@@ -41,33 +51,16 @@
 
 }
 
-.project-link:hover,
-.project-link:focus {
-    box-shadow: $project-shadow-color;
-    
-}
-
-.project-link:hover .project-cover-text,
-.project-link:focus .project-cover-text {
-    transform: translateY(0%);
-
-} 
-
 .project-list .project-item {
     flex-basis: calc((100% - 60px) / 3);  
-    /* margin-right: 30px;
-    margin-bottom: 30px; */
 
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
     
-   
-}
-
-.project-list .project-item:nth-child(3n) {
-    margin-right: 0;
-}
-
-.project-list .project-item:nth-last-child(-n+3) {
-    margin-bottom: 0;
+    &:nth-last-child(-n+3) {
+        margin-bottom: 0;
+    }
 }
 
 .project-title {

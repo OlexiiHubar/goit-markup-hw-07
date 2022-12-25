@@ -2,12 +2,9 @@
     background-color: $additional-bcg-color;
 }
 
-
-
 .team-list {
     display: flex;
 }
-
 
 .teammate-item {
     margin-right: 30px;
@@ -16,10 +13,9 @@
     background-color: $white-color;
     box-shadow: $photo-shadow-color;
     
-}
-
-.teammate-item:last-child {
-    margin-right: 0;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .teammate-name {

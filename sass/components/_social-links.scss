@@ -8,12 +8,12 @@
 .link-item {
     width: 44px;
     height: 44px;
-
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
 }
 
-.link-item:not(:last-child) {
-    margin-right: 10px;
-}
+
 
 .social-link {
     display: flex;
@@ -32,23 +32,17 @@
 
     transition: color $transition-time $transition-cubic,
                 background-color $transition-time $transition-cubic;
-}
+    &:hover,
+    &:focus {
+        color: $white-color;
+        background-color: $accent; 
+                }     
+    &:hover .teammate-icon {
+        fill: currentColor;
+                
+                }
+            }
 
 .teammate-icon {
     fill: currentColor;
-}
-
-.teammate-link:hover,
-.teammate-link:focus {
-    color: $white-color;
-    background-color: $accent;
-
-    
-
-    
-}
-
-.teammate-link:hover .teammate-icon {
-    fill: currentColor;
-
 }
