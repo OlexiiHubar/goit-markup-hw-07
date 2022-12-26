@@ -2,11 +2,11 @@
     padding-bottom: 0;
 }
 
-.features-list {
+.group-list {
     display: flex;
 }
 
-.features-item {
+.group-list__item {
     width: 270px;
 
     &:not(:last-child) {
@@ -14,7 +14,7 @@
     }
 }
 
-.icon-container {
+.group-list__container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,13 +26,13 @@
 
 }
 
-.features-title {
+.group-list__title {
     margin-bottom: 10px;
 
     font-size: 14px;
     text-transform: uppercase;
 }
-.features-text {
+.group-list__text {
     font-size: 14px;
     line-height: 1.71;
     color: $add-text-color;

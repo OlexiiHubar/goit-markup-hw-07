@@ -1,11 +1,11 @@
-.link-list {
+.social-list {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
 }
 
-.link-item {
+.social-list__item {
     width: 44px;
     height: 44px;
     &:not(:last-child) {
@@ -15,7 +15,7 @@
 
 
 
-.social-link {
+.social-list__social-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@
     
 }
 
-.teammate-link {
+.social-list__link {
     color: $clients-border-color;
 
     transition: color $transition-time $transition-cubic,
@@ -37,12 +37,12 @@
         color: $white-color;
         background-color: $accent; 
                 }     
-    &:hover .teammate-icon {
+    &:hover .social-list__icon {
         fill: currentColor;
                 
                 }
             }
 
-.teammate-icon {
+.social-list__icon {
     fill: currentColor;
 }

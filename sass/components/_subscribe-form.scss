@@ -4,7 +4,7 @@
 
 
 
-.form-field input {
+.form-field__input {
     padding: 15px 16px;
     margin-right: 12px;
     width: 358px;
@@ -34,8 +34,9 @@
     padding: 10px 28px;   
 }
 
-.icon-subscribe {
+.form-field__icon {
     margin-left: 10px;
 
     fill: $white-color;
 }
+

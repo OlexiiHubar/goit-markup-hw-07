@@ -1,23 +1,16 @@
-.work-title {
-    margin-bottom: 50px;
-
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-}
-.work-list {
+.picture-list {
     display: flex;
 
-    & .work-item:not(:last-child) {
+    &__item:not(:last-child) {
         margin-right: 30px;
     }
 }
 
-.work-item {
+.picture-list__item {
     position: relative;
 }
 
-.work-text {
+.picture-list__text {
     position: absolute;
     bottom: 0;
     display: inline-flex;

@@ -18,7 +18,7 @@
   }
 }
 
-.form-title {
+.modal-form__title {
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -85,7 +85,7 @@
   }
 }
 
-.modal-form-field label {
+.modal-form__label{
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -93,12 +93,12 @@
   letter-spacing: 0.01em;
   color: $add-text-color;
 
-  & label:last-child {
+  &:last-child {
     margin-bottom: 0;
   }
 }
 
-.modal-form-field input,
+.modal-form__input,
 .modal-form-field textarea {
   font-size: 12px;
   line-height: 1.167;
@@ -109,18 +109,14 @@
   resize: none;
 }
 
-.modal-form-field input {
-  padding-left: 42px;
-}
-
-.form-icon {
+.modal-form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
   pointer-events: none;
 }
 
-.form-input {
+.modal-form__input {
   padding: 12px 12px;
   line-height: 1.167;
   transition: border-color var(--transition-time) var(--transition-cubic);
@@ -137,13 +133,19 @@
     border-color: $accent;
     outline: none;
   }
-  &:hover + .form-icon,
-  &:focus + .form-icon {
+  &:hover + .modal-form__icon,
+  &:focus + .modal-form__icon {
     fill: $accent;
   }
 }
 
-.form-input + .form-icon {
+.modal-form__input--left-padding {
+  padding-left: 42px;
+}
+
+
+.modal-form__input,
+.modal-form__icon {
   transition: fill var(--transition-time) var(--transition-cubic);
 }
 
@@ -159,14 +161,24 @@
   align-items: center;
 }
 
-.modal-form-field .policy-checkbox {
+.modal-form-field__policy-checkbox {
   appearance: none;
   position: absolute;
   border: 0;
   padding: 0;
+
+  &:checked + .modal-form-field__policy-label > span svg {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+  
+    opacity: 1;
+    border-radius: 2px;
+    background-color: $accent;
+  }
 }
 
-.checkbox-icon {
+.modal-form-field__checkbox-icon {
   position: relative;
   border: 2px solid $check-box-color;
   width: 16px;
@@ -181,17 +193,7 @@
   }
 }
 
-.policy-checkbox:checked + .policy-label > span svg {
-  position: absolute;
-  top: -2px;
-  left: -2px;
-
-  opacity: 1;
-  border-radius: 2px;
-  background-color: $accent;
-}
-
-.modal-form-field .policy-label {
+.modal-form-field__policy-label {
   display: flex;
   align-items: center;
 
@@ -202,7 +204,7 @@
   color: $add-text-color;
 }
 
-.policy-link {
+.modal-form-field__policy-link {
   margin-left: 5px;
   color: $accent;
 }

@@ -3,5 +3,17 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: var(--basic-logo-color);
+    color: $basic-logo-color;
+}
+
+.logo--light {
+    display: block;
+    margin-bottom: 20px;
+
+    color: $white-color;
+     
+}
+
+.logo__label {
+    color: $accent;
 }

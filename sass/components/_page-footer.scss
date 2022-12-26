@@ -1,49 +1,27 @@
 .page-footer {
-    background-color: $address-bcg-color;
-    padding: 60px 0;
-}
 
-.footer-container {
-    display: flex;
-    justify-content: space-between;
+    padding: 60px 0;
+
+    background-color: $address-bcg-color;
     
 }
-
-
-.footer-logo {
-    display: block;
-    margin-bottom: 20px;
-
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: $white-color;
-}
-
-.logotype-color {
-    color: $accent;
-}
-
-
 
 .address-list {
     font-style: normal;
 
-    & >.item:not(:last-child) {
+    &__item:not(:last-child) {
         margin-bottom: 12px;
     }
 
 }
 
-.address-list .footer-contact,
-.address-item {
+.address-list,
+.address-list__item {
     font-size: 14px;
     line-height: 1.71;
 }
 
-.address-item {
-    color: $white-color;
+.address-list__link {
 
     transition: color $transition-time $transition-cubic;
 
@@ -53,26 +31,23 @@
     }
 }
 
-.footer-contact {
-    color: $footer-contact-color;
-
-    transition: color $transition-time $transition-cubic;
-
-    &:hover,
-    &:focus {
-    color: $accent;
+.address-list__link--light {
+    color: $white-color;
 }
+
+.address-list__link--dark {
+    color: $footer-contact-color;
 }
 
 .adress-container {
     margin-right: 70px;
 }
 
-.social-link-container {
+.social-link__container {
     margin-right: 93px;
 }
 
-.footer-title {
+.social-link__title {
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -83,20 +58,12 @@
     color: $white-color;
 }
 
-.footer-list {
+.social-list--padding {
     padding-bottom: 0;
 }
 
-.footer-link {
+.social-list__link--light {
     color: $white-color;
-    background-color: $background-footer-link;
-
-    transition: background-color $transition-time $transition-cubic;
-
-    &:hover,
-    &:focus {
-    background-color: $accent;
-}
 }
 
 

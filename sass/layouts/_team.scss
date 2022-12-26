@@ -2,11 +2,11 @@
     background-color: $additional-bcg-color;
 }
 
-.team-list {
+.card-list {
     display: flex;
 }
 
-.teammate-item {
+.card-list__item {
     margin-right: 30px;
     border-radius: 0 0 4px 4px;
 
@@ -18,22 +18,22 @@
     }
 }
 
-.teammate-name {
+.card-list__name {
     padding-top: 30px;
     margin-bottom: 10px;
 }
 
-.teammate-name,
-.teammate-pos  {
+.card-list__name,
+.card-list__pos  {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
 }
 
-.teammate-pos {
+.card-list__pos {
     margin-bottom: 16px;
-
     font-weight: 400;
+
     color: $add-text-color;
 }

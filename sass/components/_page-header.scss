@@ -2,33 +2,25 @@
     border-bottom: 1px solid;
     border-color: $header-border-color;
 }
-.nav-list {
+.navigation__list {
     display: flex;
     margin-left: 93px;
 
-    & .item:not(:last-child) {
+    & .navigation__item:not(:last-child) {
         margin-right: 50px;
     }
 }
 
-
-
-
-
-.contact-list {
+.contact__list {
     display: flex;
 
-    & .item:not(:last-child) {
+    & .contact__item:not(:last-child) {
         margin-right: 50px;
     }
 }
 
-
-
-
-
-.nav-link,
-.contact-item  {
+.navigation__link,
+.contact__item  {
     display: inline-flex;
     align-items: center;
     padding-top: 32px;
@@ -42,14 +34,14 @@
     transition: color $transition-time $transition-cubic;
 }
 
-.logo-color,
-.contact-item:hover,
-.contact-item:focus {
+.logo__color,
+.contact__item:hover,
+.contact__item:focus {
     color: $accent;
     
 }
 
-.nav-link {
+.navigation__link {
     position: relative;
     &:hover,
     &:focus {
@@ -57,7 +49,7 @@
     }
 }
 
-.nav-link.current::after {
+.navigation__link.current::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -72,28 +64,24 @@
     }
 }
 
-.page-nav,
+.navigation,
 .page-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.contact-item {
+.contact__item {
     color: $add-text-color;
 }
 
 .icon-envelope {
-    width: 16px;
-    height: 12px;
     margin-right: 10px;
 
     fill: currentColor;
 }
 
 .icon-smartphone {
-    width: 10px;
-    height: 16px;
     margin-right: 10px;
 
     fill: currentColor;
