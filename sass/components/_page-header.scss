@@ -20,7 +20,7 @@
 }
 
 .navigation__link,
-.contact__item  {
+.contact__link  {
     display: inline-flex;
     align-items: center;
     padding-top: 32px;
@@ -34,9 +34,14 @@
     transition: color $transition-time $transition-cubic;
 }
 
+.contact__link {
+     color: $add-text-color;  
+}
+
+
 .logo__color,
-.contact__item:hover,
-.contact__item:focus {
+.contact__link:hover,
+.contact__link:focus {
     color: $accent;
     
 }
@@ -47,22 +52,22 @@
     &:focus {
         color: $accent;
     }
-}
-
-.navigation__link.current::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: $accent;
-
     &.current {
         color: $accent;
     }
+    &.current::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+    
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $accent;
+    }
 }
+
+
 
 .navigation,
 .page-header .container {
