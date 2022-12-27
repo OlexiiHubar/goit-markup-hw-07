@@ -29,6 +29,7 @@
 
 .social-list__link {
     color: $clients-border-color;
+    background-color:  $background-footer-link;
 
     transition: color $transition-time $transition-cubic,
                 background-color $transition-time $transition-cubic;
